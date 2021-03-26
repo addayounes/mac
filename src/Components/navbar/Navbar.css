@@ -1,0 +1,51 @@
+:root {
+    --accent-clr: #3C96AE;
+    --dark-clr: #3A4855;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px -25px 32px black;
+    display: flex;
+}
+.container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 90px;
+    display: flex;
+    justify-self: flex-start;
+}
+
+header nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-self: flex-end;
+}
+.nested-ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+
+header nav > ul li a {
+    text-decoration: none;
+    color: var(--accent-clr);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 29px 2.2rem;
+}
+header nav > ul li a:hover,.active {
+    background-color: var(--accent-clr);
+    color: white;
+}
+
+
