@@ -1,9 +1,9 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
-import page from "./Components/page";
 import LandingPage from "./Pages/Landing Page/LandingPage";
 import Content from "./Pages/Section/Content";
-import { sectionData } from './Pages/Section/Data'
+import {  TenTalk , Evenements , Activities } from './Pages/Section/Data'
+
 
 function App() {
   return (
@@ -11,9 +11,10 @@ function App() {
       <BrowserRouter>
         <div>
           <Navbar />
-          <Route path="/siruis" component={page} />
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/about" component={Content} {...sectionData} />
+          <Route exact path="/10talk" component={() => <Content sectionData={TenTalk} />} />
+          <Route exact path="/events" component={() => <Content sectionData={Evenements} />} />
+          <Route exact path="/activities" component={() => <Content sectionData={Activities} />} />
         </div>
       </BrowserRouter>
     

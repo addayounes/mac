@@ -2,9 +2,12 @@ import React from 'react'
 import Button from '../../Components/button/Button'
 import './LandingPage.css'
 import illustration from '../../images/illustration.png'
+import Content from '../Section/Content'
+import { whatIsMac , TenTalk , Evenements , Activities } from '../Section/Data'
 
 const LandingPage = () => {
     return (
+        <>
         <section className="home__wrapper">
             <div className="home__left">
                 <h1>Bienvenue au <span>Mechanical Activities Club</span></h1>
@@ -19,6 +22,11 @@ const LandingPage = () => {
                 <img src={illustration} alt="Illustration" />
             </div>
         </section>
+        <Content sectionData={whatIsMac} />
+        <Content sectionData={TenTalk} />
+        <Content sectionData={Evenements} />
+        <Content sectionData={Activities} />
+        </>
     )
 }
 

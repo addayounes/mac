@@ -57,7 +57,7 @@ header nav > ul li a:hover,.active {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
     nav  {
         display: none;
     }
@@ -90,10 +90,5 @@ header nav > ul li a:hover,.active {
         background-color: transparent;
         color: var(--dark-clr);
     }
-
-    /* header #hidden > ul li:hover .nested-ul{
-        display: flex;
-        flex-direction: column;
-    } */
 
   }

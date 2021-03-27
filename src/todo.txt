@@ -1,0 +1,12 @@
+
+ ///////// - todo - //////////
+
+  (  )  - footer
+  (  )  - ficier section
+  (  )  - contact form
+  (  )  - about section
+  (  )  - fix drop-down menus
+  (  )  - rewrite navbar/landing page 's css
+  (  )  - create detailed sections
+  (  )  - implements go to top
+  (  )  - animations ?
