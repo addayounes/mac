@@ -1,20 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../images/logo.png'
+import menu from '../../images/menu.svg'
+import exit from '../../images/exit.svg'
 
 const Navbar = () => {
+
+    const [toggleNavBar, setToggleNavBar] = useState(false)
+    
+    const handleMenuClick = () => {
+        setToggleNavBar(!toggleNavBar)
+    }
     return (
         <header>
             <div className="container">
                 <img className="logo" src={logo} alt='logo' />
-                <nav>
-                    <ul>
+                <nav id={toggleNavBar ? 'hidden' : ''}>
+                    <ul onClick={handleMenuClick}>
                         <li><NavLink exact to="/">Accueil</NavLink></li>
                         <li><NavLink to="/fichiers">Fichiers</NavLink></li>
                         <li>
                             <NavLink to="/events">Evenements
-                            <ul className="nested-ul">
+                            <ul className='nested-ul'>
                                 <li><NavLink to="/10talk">10Talk</NavLink></li>
                                 <li><NavLink to="/charity">Charity</NavLink></li>
                                 <li><NavLink to="/macday">MAC day</NavLink></li>
@@ -38,6 +46,8 @@ const Navbar = () => {
                         <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
+                {toggleNavBar ? <img onClick={handleMenuClick} className="exit" src={exit} alt='exit' />
+                 : <img onClick={handleMenuClick} className="menu" src={menu} alt='menu' />}
             </div>
         </header>
     )
