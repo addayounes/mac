@@ -9,6 +9,7 @@
 }
 #hidden {
     display: flex;
+    z-index: 1000;
 }
 
 header {

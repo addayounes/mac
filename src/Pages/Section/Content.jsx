@@ -13,7 +13,7 @@ const Content = ({sectionData}) => {
         <section className="content">
             <div style={sectionStyle} className="split">
                 <div className="section__right">
-                    <img src={sectionData.img} alt={sectionData.imgAlt} />
+                    <img src={sectionData.img} alt={sectionData.imgAlt.toString()} />
                 </div>
                 <div className="section__left">
                     <div className="split-wrapper">

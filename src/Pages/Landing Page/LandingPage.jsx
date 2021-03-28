@@ -3,7 +3,7 @@ import Button from '../../Components/button/Button'
 import './LandingPage.css'
 import illustration from '../../images/illustration.png'
 import Content from '../Section/Content'
-import { whatIsMac , TenTalk , Evenements , Activities } from '../Section/Data'
+import { whatIsMac , TenTalk , Evenements , ActivitiesData } from '../Section/Data'
 
 const LandingPage = () => {
     return (
@@ -25,7 +25,7 @@ const LandingPage = () => {
         <Content sectionData={whatIsMac} />
         <Content sectionData={TenTalk} />
         <Content sectionData={Evenements} />
-        <Content sectionData={Activities} />
+        <Content sectionData={ActivitiesData} />
         </>
     )
 }

@@ -1,0 +1,28 @@
+.content__text {
+    width: 85%;
+    margin: 0 auto 2.5em;
+    line-height: 1.6;
+    color: #3A4855;
+}
+
+.content__heading {
+    font-size: 2em;
+    margin: 0;
+}
+.content__description {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content__description {
+        width: 80ch;
+        text-align: center;
+    }
+    .content__text {
+        width: 70%;
+    }
+    .content__heading {
+        text-align: center;
+    }
+}

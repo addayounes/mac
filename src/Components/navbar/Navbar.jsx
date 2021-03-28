@@ -19,19 +19,19 @@ const Navbar = () => {
                 <nav id={toggleNavBar ? 'hidden' : ''}>
                     <ul onClick={handleMenuClick}>
                         <li><NavLink exact to="/">Accueil</NavLink></li>
-                        <li><NavLink to="/fichiers">Fichiers</NavLink></li>
+                        <li><NavLink to="/Fichiers">Fichiers</NavLink></li>
                         <li>
-                            <NavLink to="/events">Evenements
+                            <NavLink to="/Events">Evenements
                             <ul className='nested-ul'>
-                                <li><NavLink to="/10talk">10Talk</NavLink></li>
-                                <li><NavLink to="/charity">Charity</NavLink></li>
-                                <li><NavLink to="/macday">MAC day</NavLink></li>
-                                <li><NavLink to="/macgcs">MAC's GCS</NavLink></li>
+                                <li><NavLink to="/10Talk">10Talk</NavLink></li>
+                                <li><NavLink to="/Charity">Charity</NavLink></li>
+                                <li><NavLink to="/MACday">MAC day</NavLink></li>
+                                <li><NavLink to="/MACGCS">MAC's GCS</NavLink></li>
                             </ul>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/activities">Activités
+                            <NavLink to="/Activities">Activités
                                 <ul className="nested-ul">
                                     <li><NavLink to="/LangageSpot">Langage Spot</NavLink></li>
                                     <li><NavLink to="/Workshop">Workshop</NavLink></li>
