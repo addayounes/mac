@@ -23,6 +23,8 @@
     margin: 1.8rem 0 3rem;
     font-size: 1.1rem;
     color: var(--dark-clr);
+    line-height: 1.4;
+    font-weight: 500;
 }
 .btn-rejoindre {
     margin-right: 10px;

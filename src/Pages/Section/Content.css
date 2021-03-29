@@ -30,6 +30,8 @@
 .section__left p{
     font-size: 1.2rem;
     margin-bottom: 2em;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
 .section__left h2,p {
@@ -45,6 +47,7 @@
 
     .split {
         display: flex;
+        padding: 2em 0;
     }
 
     .section__left,.section__right{
