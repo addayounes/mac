@@ -3,7 +3,7 @@
 }
 
 .home__wrapper {
-    width: 85%;
+    width: 76%;
     margin: 0 auto;
     display: flex;
     min-height: calc(100vh - 80px);
@@ -31,13 +31,18 @@
 }
 
 .home__right img {
-    width: 80%;
+    width: 90%;
     float: right;
 }
 
 /* *********** media queries *********** */
 
 @media only screen and (max-width: 1200px) {
+
+    .home__wrapper {
+        width: 85%
+    }
+
     .home__right img {
         min-width: 50%;
     }

@@ -8,6 +8,8 @@ import workshop from  '../../images/langage/1.jpg'
 import webdesign from  '../../images/langage/2.jpg'
 import printer from  '../../images/langage/3.jpg'
 import training from  '../../images/langage/4.jpg'
+import charity from '../../images/charity.jpg'
+import macday from '../../images/macday.jpg'
 
 export const whatIsMac = {
     imgAlt:"Le MAC",
@@ -22,7 +24,7 @@ export const TenTalk = {
     imgAlt:"10 Talk",
     img: tenTalk,
     headline: "10 Talk",
-    paragraph:"10Talk est un débat de 10 minutes où deux débatteurs ont seulement 20 secondes par tour pour présenter leurs arguments afin d’éclaircir, prouver, ou juste partager leurs convictions dans un sujet précis. L’objectif de ce dernier est de rassembler les intellectuels dans un espace ouvert et respectueux pour discuter de différents sujets intéressants suivant certaines règles.",
+    paragraph:"10talk est un concept tout nouveau lancé par le club scientifique MAC, c’est un débat entre deux participants avec deux points de vue totalement différents, ça dure 10 minutes où chacun a 20 secondes à tour...",
     flexDirection:"row-reverse",
     btn:true,
     buttonLabel:'En savoir plus',
@@ -86,6 +88,38 @@ export const TrainingsData = {
     img: training,
     headline: "Trainings",
     paragraph:"Trainings » c’est des formations que le MAC propose pour ses membres afin d’améliorer leurs compétences et donner un travail meilleur. Ces formations sont beaucoup plus...",
+    flexDirection:"row-reverse",
+    btn:true,
+    buttonLabel:'En savoir plus',
+}
+export const AboutUsData = {
+    imgAlt:"The MAC Story",
+    img: printer,
+    headline: "The MAC Story",
+    paragraph:"Se réunir est un début, rester ensemble est un progrès, travailler ensemble est la réussite.",
+    flexDirection:"row-reverse",
+    btn:false,
+    buttonLabel:'En savoir plus',
+    bgColor: "#3C96AE",
+    TxtColor: "#fff",
+    TxtSize: "2.8rem",
+    TxtWeight: "800",
+    margin: true
+}
+export const CharityData = {
+    imgAlt:"Charity",
+    img: charity,
+    headline: "Charity",
+    paragraph: "« On n’est jamais heureux que dans le bonheur qu’on donne. Donner c’est recevoir. » Abbé Pierre. Charity comme son nom l’indique est une sorte de plusieurs évènements de charité par lesquels le MAC cherche...",
+    flexDirection:"row",
+    btn:true,
+    buttonLabel:'En savoir plus',
+}
+export const MacDayData = {
+    imgAlt:"MAC Day",
+    img: macday,
+    headline: "MAC Day",
+    paragraph: "Le MAC Day est un évènement annuel par lequel le club MAC organise une variante d’activités culturelles et scientifiques (jeux, expositions, conférences … ) au sein de l’Ecole Nationale Polytechnique d’Oran ENPO-MA...",
     flexDirection:"row-reverse",
     btn:true,
     buttonLabel:'En savoir plus',

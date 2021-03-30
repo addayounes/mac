@@ -1,0 +1,32 @@
+.stretch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2.5em 0;
+    width: 76%;
+    color: #3A4855;
+}
+.about-us__description p {
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: center;
+    width: 85ch;
+}
+.about-us__organisation {
+    width: 100%;    
+    background-color: #F5FAFB;
+}
+.organisation-wrapper {
+    width: 76%;
+}
+.about-us__organisation h1 {
+    font-size: 2.3125rem;
+    margin-bottom: .5em;
+}
+.about-us__organisation p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: 500;
+}

@@ -8,7 +8,7 @@ const Button = ({size, text, color, bgColor, border, className, hover}) => {
     const [btnStyle, setBtnStyle] = useState({
         backgroundColor:bgColor,
         color: color,
-        border: border ? `2px solid ${color}` : `2px solid ${bgColor}`,
+        border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
         fontSize: size
     })
 
@@ -16,7 +16,7 @@ const Button = ({size, text, color, bgColor, border, className, hover}) => {
         setBtnStyle({
             backgroundColor: color,
             color: bgColor,
-            border: border ? `2px solid ${color}` : `2px solid ${bgColor}`,
+            border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
             transition: 'all .05s ease-in',
             fontSize: size
         })
@@ -25,7 +25,7 @@ const Button = ({size, text, color, bgColor, border, className, hover}) => {
         setBtnStyle({
             backgroundColor:bgColor,
             color: color,
-            border: border ? `2px solid ${color}` : `2px solid ${bgColor}`,
+            border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
             transition: 'all .05s ease-in',
             fontSize: size
         })

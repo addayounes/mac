@@ -1,6 +1,6 @@
 import React from 'react'
-import Content from './Section/Content'
-import { LanguageSpot, WorkshopData, WebDesignData, PrinterData, TrainingsData } from './Section/Data'
+import Content from '../Section/Content'
+import { LanguageSpot, WorkshopData, WebDesignData, PrinterData, TrainingsData } from '../Section/Data'
 
 const Activities = () => {
     return (

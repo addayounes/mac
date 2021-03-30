@@ -1,13 +1,23 @@
 
  ///////// - todo - //////////
 
+  ( x )  - create detailed sections
+  ( x )  - slideshow
+  ( x )  - about section
+  ( x )  - evenets section
+  ( x )  - landing page
+  ( x )  - activity section
   (   )  - footer
   (   )  - fichier section
+  (   )  - Siruis section
   (   )  - contact form
-  (   )  - about section
-  (   )  - fix drop-down menus
-  (   )  - rewrite navbar/landing page 's css
-  ( x )   - create detailed sections
-  ( x )  - slideshow
   (   )  - implements go to top
+  (   )  - handle button clicks
   (   )  - animations ?
+
+
+  ///// debugging /////
+
+  (   )  - fix drop-down menus
+  (   )  - rewrite navbar's css
+  (   )  - rewrite landing page's css
