@@ -9,6 +9,7 @@ import { TenTalkDetails, CharityDetails, MacDayDetails, LanguageSpotDetails, Wor
 import Activities from "./Pages/Activities/Activities";
 import AboutUs from "./Pages/About Us/AboutUs.jsx"
 import Events from "./Pages/Events/Events";
+import Contact from "./Pages/Contact/Contact";
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
           <Navbar />
           <Route exact path="/" component={LandingPage} />
           <Route path="/10talk" component={() => <Content sectionData={TenTalk} />} />
-          <Route path="/Contact" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
+          {/* <Route path="/Contact" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} /> */}
           <Route path="/Activities" component={() => <Activities />} />
+          <Route path="/contact" component={() => <Contact />} />
           <Route path="/about" component={() => <AboutUs />} />
           <Route path="/Events" component={() => <Events />} />
           <Route path="/Charity" component={() => <ContentDetails ContentDetails={CharityDetails} />} />

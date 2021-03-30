@@ -12,7 +12,7 @@
     flex-direction: row;
 }
 
-.home__left h1,span{
+.home__left h1, .home__left span{
     display: block;
     font-size: 2.8rem;
     margin: 0;
@@ -46,7 +46,7 @@
     .home__right img {
         min-width: 50%;
     }
-    .home__left h1,span{
+    .home__left h1,.home__left span{
         font-size: 2.1rem;
     }
     .home__left p {

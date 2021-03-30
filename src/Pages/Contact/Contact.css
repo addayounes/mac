@@ -1,0 +1,73 @@
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.contact__right-wrapper {
+    padding: 0 7.5%;
+}
+
+.contact__right {
+    margin: 0 auto;
+    padding: 2em 0;
+    color: #3A4855;
+    width: 100%;
+    background-color: #F5FAFB;
+}
+.contact__right .contact__infos {
+    margin: 2rem 0;
+}
+.contact__right .contact__heading {
+    margin-top: 2rem;
+}
+.contact__right .contact__infos .contact__infos-label {
+    display: block;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+.contact__right .contact__infos .contact__infos-detail {
+    font-weight: 500;
+}
+
+
+.contact__left {
+    margin: 0 auto;
+    padding: 2em 7.5% 4em;
+    color: #3A4855;
+    width: 100%;
+    background-color: #fff;
+}
+.contact__btn {
+    width: 85%;
+}
+
+.contact__email-message:last-child {
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-section {
+        width: 100%;
+        background-color: #F5FAFB;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 76%;
+    }
+    .contact__left h1 {
+        margin-bottom: 1.5rem;
+        font-size: 1.88rem;
+    }
+    .contact__nom-prenom {
+        display: flex;
+        gap: .8em;
+        margin-bottom: -1.325em;
+    }
+    .contact__heading {
+        font-size: 1.88rem;      
+    }
+}

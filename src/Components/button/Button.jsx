@@ -3,13 +3,13 @@ import './Button.css'
 import { useState } from 'react'
 
 
-const Button = ({size, text, color, bgColor, border, className, hover}) => {
+const Button = ({ size, text, color, bgColor, border, className, hover }) => {
 
     const [btnStyle, setBtnStyle] = useState({
         backgroundColor:bgColor,
         color: color,
         border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
-        fontSize: size
+        fontSize: size,
     })
 
     const MouseEnter = () => {
@@ -18,7 +18,7 @@ const Button = ({size, text, color, bgColor, border, className, hover}) => {
             color: bgColor,
             border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
             transition: 'all .05s ease-in',
-            fontSize: size
+            fontSize: size,
         })
     }
     const MouseOut = () => {
@@ -27,7 +27,7 @@ const Button = ({size, text, color, bgColor, border, className, hover}) => {
             color: color,
             border: border ? `1.6px solid ${color}` : `1px solid ${bgColor}`,
             transition: 'all .05s ease-in',
-            fontSize: size
+            fontSize: size,
         })
     }
     

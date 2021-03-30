@@ -1,0 +1,23 @@
+
+.input__label {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input__input, .input__message {
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+    font-family: "montserrat";
+}
+.input__input:focus, .input__message:focus {
+    border: 1px #3C96AE solid;
+    outline: none;
+}
+
+.input {
+    margin: 1.5rem 0;
+}
