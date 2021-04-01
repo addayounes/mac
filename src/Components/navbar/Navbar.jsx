@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../images/logo.png'
@@ -7,11 +7,12 @@ import exit from '../../images/exit.svg'
 
 const Navbar = () => {
 
-    const [toggleNavBar, setToggleNavBar] = useState(false)
-    
+    const [toggleNavBar, setToggleNavBar] = useState(false)       
+
     const handleMenuClick = () => {
         setToggleNavBar(!toggleNavBar)
     }
+
     return (
         <header>
             <div className="container">

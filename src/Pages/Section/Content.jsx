@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../../Components/button/Button'
 import "./Content.css"
 
 
-const Content = ({sectionData}) => {
+const Content = ({sectionData, destination}) => {
 
     const splitStyle = {
         flexDirection: sectionData.flexDirection,
@@ -12,6 +12,10 @@ const Content = ({sectionData}) => {
         backgroundColor: sectionData.bgColor,
         margin: sectionData.margin ? '0' : '2.5em 0'
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <section style={sectionStyle} className="content">
@@ -26,7 +30,7 @@ const Content = ({sectionData}) => {
                                     fontWeight: sectionData.TxtWeight
                         }}>{sectionData.headline}</h2>
                         <p style={{color: sectionData.TxtColor}}>{sectionData.paragraph}</p>
-                        {sectionData.btn && <Button text={sectionData.buttonLabel} color="white" bgColor="#3C96AE" border={false} hover={false} size=".875rem"  />}
+                        {sectionData.btn && <Button destination={destination} text={sectionData.buttonLabel} color="white" bgColor="#3C96AE" border={false} hover={false} size=".875rem"  />}
                     </div>
                 </div>
             </div>

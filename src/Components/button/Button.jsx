@@ -1,9 +1,10 @@
 import React from 'react'
 import './Button.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
-const Button = ({ size, text, color, bgColor, border, className, hover }) => {
+const Button = ({ size, text, color, bgColor, border, className, hover, destination }) => {
 
     const [btnStyle, setBtnStyle] = useState({
         backgroundColor:bgColor,
@@ -33,11 +34,11 @@ const Button = ({ size, text, color, bgColor, border, className, hover }) => {
     
     return (
         <>
-        <a href="/" className={'btn ' + className}
+        <Link to={destination} className={'btn ' + className}
           style={btnStyle}
           onMouseOver={hover ? MouseEnter : undefined}
           onMouseOut={hover ? MouseOut : undefined}
-        >{text}</a> 
+        >{text}</Link> 
         </>
     )
 }

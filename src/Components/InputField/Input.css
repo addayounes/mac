@@ -13,9 +13,13 @@
     border-radius: 4px;
     font-family: "montserrat";
 }
+.input__message {
+    resize: none;
+}
+
 .input__input:focus, .input__message:focus {
-    border: 1px #3C96AE solid;
     outline: none;
+    box-shadow: 0 0 0 .6px var(--accent-clr);
 }
 
 .input {

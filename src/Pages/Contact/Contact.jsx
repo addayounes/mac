@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../../Components/button/Button'
 import Input from "../../Components/InputField/Input"
 import "./Contact.css"
@@ -7,10 +7,7 @@ const Contact = () => {
 
     const [viewPortWidth, setViewPortWidth] = useState("100%")
 
-    // if(window.innerWidth>1250) {
-    //     setViewPortWidth("50%")
-    //     console.log(viewPortWidth);
-    // }
+    useEffect(() => {window.scrollTo(0,0)}, [])
 
     return (
         <section className="contact-section">

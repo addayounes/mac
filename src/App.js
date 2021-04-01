@@ -2,7 +2,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import ContentDetails from "./Pages/Content Details/ContentDetails";
 import LandingPage from "./Pages/Landing Page/LandingPage";
-import Content from "./Pages/Section/Content";
 import { TenTalk } from './Pages/Section/Data'
 import { TenTalkSlide } from './Components/Slideshow/SliderData'
 import { TenTalkDetails, CharityDetails, MacDayDetails, LanguageSpotDetails, WorkshopDetails, WebDesignDetails, PrinterDetails, TrainingsDetails } from "./Pages/Content Details/DetailsData"
@@ -13,14 +12,13 @@ import Contact from "./Pages/Contact/Contact";
 
 
 function App() {
-  return (
 
+  return (
       <BrowserRouter>
         <div>
           <Navbar />
           <Route exact path="/" component={LandingPage} />
-          <Route path="/10talk" component={() => <Content sectionData={TenTalk} />} />
-          {/* <Route path="/Contact" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} /> */}
+          <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
           <Route path="/Activities" component={() => <Activities />} />
           <Route path="/contact" component={() => <Contact />} />
           <Route path="/about" component={() => <AboutUs />} />

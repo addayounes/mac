@@ -5,11 +5,11 @@ import { LanguageSpot, WorkshopData, WebDesignData, PrinterData, TrainingsData }
 const Activities = () => {
     return (
         <div>
-            <Content sectionData={LanguageSpot} />
-            <Content sectionData={WorkshopData} />
-            <Content sectionData={WebDesignData} />
-            <Content sectionData={PrinterData} />
-            <Content sectionData={TrainingsData} />
+            <Content sectionData={LanguageSpot} destination="/LangageSpot" />
+            <Content sectionData={WorkshopData} destination="/Workshop" />
+            <Content sectionData={WebDesignData} destination="/WebDesign" />
+            <Content sectionData={PrinterData} destination="/3DPrinter" />
+            <Content sectionData={TrainingsData} destination="/Trainings" />
         </div>
     )
 }

@@ -5,9 +5,9 @@ import {TenTalk, CharityData, MacDayData} from "../Section/Data"
 const Events = () => {
     return (
         <div>
-            <Content sectionData={TenTalk} />
-            <Content sectionData={CharityData} />
-            <Content sectionData={MacDayData} />
+            <Content sectionData={TenTalk} destination="/10talk" />
+            <Content sectionData={CharityData} destination="/Charity" />
+            <Content sectionData={MacDayData} destination="/MACday" />
         </div>
     )
 }
