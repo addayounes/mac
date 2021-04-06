@@ -8,13 +8,22 @@ import exit from '../../images/exit.svg'
 const Navbar = () => {
 
     const [toggleNavBar, setToggleNavBar] = useState(false)       
+    const [NavBarShadows, setNavBarShadows] = useState(false)       
 
     const handleMenuClick = () => {
         setToggleNavBar(!toggleNavBar)
     }
 
+    const handleNavBarShadows = () => {
+        if(window.scrollY>0){
+            setNavBarShadows(true)
+        }else if(window.scrollY===0) setNavBarShadows(false)
+    }
+
+    window.addEventListener('scroll', handleNavBarShadows)
+
     return (
-        <header>
+        <header className={NavBarShadows ? "box_shadow" : ""}>
             <div className="container">
                 <img className="logo" src={logo} alt='logo' />
                 <nav id={toggleNavBar ? 'hidden' : ''}>

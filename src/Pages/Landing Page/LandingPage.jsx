@@ -16,7 +16,7 @@ const LandingPage = () => {
                 afin de créer la solidarité et l’union entre les étudiants, les encourager,
                 et éclaircir leur vision vis-à-vis du monde professionnel.</p>
                 <div className="btns">
-                    <Button className="btn-rejoindre" text="Rejoindre" color="white" bgColor="#3C96AE" border={false} hover={false} size="1rem" />
+                    <Button className="btn-rejoindre" text="Rejoindre" destination="/Rejoindre" color="white" bgColor="#3C96AE" border={false} hover={false} size="1rem" />
                     <Button className="btn-contact" text="Contact" destination="/contact" color="#3C96AE" bgColor="white" border={true} hover={true} size="1rem" />
                 </div>
             </div>

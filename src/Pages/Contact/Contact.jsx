@@ -7,7 +7,7 @@ const Contact = () => {
 
     const [viewPortWidth, setViewPortWidth] = useState("100%")
 
-    useEffect(() => {window.scrollTo(0,0)}, [])
+    useEffect(() => {window.scrollTo(0,0)})
 
     return (
         <section className="contact-section">

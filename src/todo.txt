@@ -8,12 +8,13 @@
   ( x )  - landing page
   ( x )  - activity section
   ( x )  - contact form
+  ( x )  - handle button clicks
+  ( x )  - join us section
   (   )  - footer
   (   )  - fichier section
   (   )  - Siruis section
   (   )  - social media links
   (   )  - implements go to top
-  (   )  - handle button clicks
   (   )  - animations ?
 
 
@@ -21,5 +22,5 @@
 
   (   )  - fix drop-down menus
   (   )  - rewrite navbar's css
-  (   )  - rewrite landing page's css
+  ( x )  - rewrite landing page's css
   (   )  - button stretch on a specific view port

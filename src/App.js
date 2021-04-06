@@ -2,13 +2,15 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import ContentDetails from "./Pages/Content Details/ContentDetails";
 import LandingPage from "./Pages/Landing Page/LandingPage";
-import { TenTalk } from './Pages/Section/Data'
 import { TenTalkSlide } from './Components/Slideshow/SliderData'
-import { TenTalkDetails, CharityDetails, MacDayDetails, LanguageSpotDetails, WorkshopDetails, WebDesignDetails, PrinterDetails, TrainingsDetails } from "./Pages/Content Details/DetailsData"
+import { TenTalkDetails, CharityDetails, MacDayDetails, LanguageSpotDetails,
+WorkshopDetails, WebDesignDetails, PrinterDetails, TrainingsDetails }
+from "./Pages/Content Details/DetailsData"
 import Activities from "./Pages/Activities/Activities";
 import AboutUs from "./Pages/About Us/AboutUs.jsx"
 import Events from "./Pages/Events/Events";
 import Contact from "./Pages/Contact/Contact";
+import JoinUs from './Pages/Join Us/JoinUs'
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
           <Route path="/Activities" component={() => <Activities />} />
+          <Route path="/Rejoindre" component={() => <JoinUs />} />
           <Route path="/contact" component={() => <Contact />} />
           <Route path="/about" component={() => <AboutUs />} />
           <Route path="/Events" component={() => <Events />} />
