@@ -10,11 +10,11 @@
   ( x )  - contact form
   ( x )  - handle button clicks
   ( x )  - join us section
+  ( x )  - Siruis section
+  ( x )  - social media links
   (   )  - footer
   (   )  - fichier section
-  (   )  - Siruis section
-  (   )  - social media links
-  (   )  - implements go to top
+  ( ~ )  - go to top
   (   )  - animations ?
 
 

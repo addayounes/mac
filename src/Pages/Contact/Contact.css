@@ -47,6 +47,14 @@
     margin-bottom: 2em;
 }
 
+.contact__socials > * {
+    font-size: 2.5em;
+    color: #3A4855;
+}
+.social + .social {
+    margin-left: .5em;
+}
+
 @media only screen and (min-width: 1200px) {
     .contact-section {
         width: 100%;
@@ -64,8 +72,8 @@
     }
     .contact__nom-prenom {
         display: flex;
-        gap: .8em;
         margin-bottom: -1.325em;
+        justify-content: space-between;
     }
     .contact__heading {
         font-size: 1.88rem;      

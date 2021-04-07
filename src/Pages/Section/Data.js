@@ -10,6 +10,10 @@ import printer from  '../../images/langage/3.jpg'
 import training from  '../../images/langage/4.jpg'
 import charity from '../../images/charity.jpg'
 import macday from '../../images/macday.jpg'
+import sirius from '../../images/siruis/1.png'
+import siriustwo from '../../images/siruis/2.png'
+import siriusthree from '../../images/siruis/3.png'
+import siriusfour from '../../images/siruis/4.png'
 
 export const whatIsMac = {
     imgAlt:"Le MAC",
@@ -122,5 +126,41 @@ export const MacDayData = {
     paragraph: "Le MAC Day est un évènement annuel par lequel le club MAC organise une variante d’activités culturelles et scientifiques (jeux, expositions, conférences … ) au sein de l’Ecole Nationale Polytechnique d’Oran ENPO-MA...",
     flexDirection:"row-reverse",
     btn:true,
+    buttonLabel:'En savoir plus',
+}
+export const SiriusOneData = {
+    imgAlt:"Sirius",
+    img: sirius,
+    headline: "Sirius",
+    paragraph: "Sirius-10 est une fusée pleine d’innovation technologique, entièrement développée par l’équipe SIRIUS. Elle a participé aux deux compétitions nationales ( CIAA-Rocketry ), et internationales ( Spaceport america cup ) dans leur volet 10 000 pieds ( d’ou sa nomenclature )",
+    flexDirection:"row-reverse",
+    btn:false,
+    buttonLabel:'En savoir plus',
+}
+export const SiriusTwoData = {
+    imgAlt:"Conception",
+    img: siriustwo,
+    headline: "Conception",
+    paragraph: "",
+    flexDirection:"column-reverse",
+    btn:false,
+    buttonLabel:'En savoir plus',
+}
+export const SiriusThreeData = {
+    imgAlt:"Nano-Satellite",
+    img: siriusthree,
+    headline: "Nano-Satellite",
+    paragraph: "- Le travail consistera de lancer un nano satellite (10x10) à une altitude de 3 Km (l’apogée ). Ce nano satellite sera équipé par des capteurs, un système de localisation et de communication en temps réel.",
+    flexDirection:"row",
+    btn:false,
+    buttonLabel:'En savoir plus',
+}
+export const SiriusFourData = {
+    imgAlt:"Avionique",
+    img: siriusfour,
+    headline: "Avionique",
+    paragraph: "Notre système de récupération : il existe deux altimètres dotés d’une batterie et d’un communicateur dédiés. Chaque altimètre possède son propre ensemble de charges de récupération à déclencher.",
+    flexDirection:"row-reverse",
+    btn:false,
     buttonLabel:'En savoir plus',
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Button from '../../Components/button/Button'
 import Input from "../../Components/InputField/Input"
+import { Link } from 'react-router-dom'
+import { FaFacebookSquare, FaInstagramSquare, FaYoutube } from 'react-icons/fa'
 import "./Contact.css"
 
 const Contact = () => {
@@ -21,7 +23,7 @@ const Contact = () => {
                         </div>
                         <div className="contact__email-message">
                             <Input label="Email" placeolder="exemple@mail.com" message={false} width={viewPortWidth} />
-                            <Input label="Message" placeolder="Votre Message..." message={true} width={viewPortWidth} />
+                            <Input label="Message" placeolder="Votre Message..." message={true} width={viewPortWidth} rows={8} />
                         </div>
                     </div>
                     <div className="contact__btn">
@@ -44,7 +46,13 @@ const Contact = () => {
                             <span className="contact__infos-label">Adresse :</span>
                             <span className="contact__infos-detail">ENP D'Oran (Ex ENSET, Rue Oran, Es Senia)</span>
                         </div>
+                        <div className="contact__socials">
+                            <Link to={{ pathname: "https://facebook.com/MechanicalActivitiesClub/"}} target="_blank" className="social"><FaFacebookSquare /></Link>
+                            <Link to={{ pathname: "https://www.instagram.com/mechanical_activities_club/"}} target="_blank" className="social" ><FaInstagramSquare /></Link>
+                            <Link to={{ pathname: "https://www.youtube.com/channel/UCvvqlv1qW-gmP36l_QhDT2g"}} target="_blank" className="social" ><FaYoutube /></Link>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </section>

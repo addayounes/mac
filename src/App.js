@@ -11,17 +11,30 @@ import AboutUs from "./Pages/About Us/AboutUs.jsx"
 import Events from "./Pages/Events/Events";
 import Contact from "./Pages/Contact/Contact";
 import JoinUs from './Pages/Join Us/JoinUs'
+import Sirius from "./Pages/Sirius/Sirius";
+import GoToTop from "./Components/Go To Top/GoToTop";
+import { useState } from "react";
 
 
 function App() {
+
+  const [top, settop] = useState(false)
+
+  const goTo = () => {
+    window.scrollY > 100 ? settop(true) : settop(false)
+  }
+
+  window.addEventListener('scroll', goTo)
 
   return (
       <BrowserRouter>
         <div>
           <Navbar />
+          {top && <GoToTop />}
           <Route exact path="/" component={LandingPage} />
           <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
           <Route path="/Activities" component={() => <Activities />} />
+          <Route path="/Sirius" component={() => <Sirius />} />
           <Route path="/Rejoindre" component={() => <JoinUs />} />
           <Route path="/contact" component={() => <Contact />} />
           <Route path="/about" component={() => <AboutUs />} />
