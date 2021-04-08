@@ -1,11 +1,12 @@
 import React from 'react'
+import { animateScroll  } from 'react-scroll'
 import { FaCaretSquareUp } from 'react-icons/fa'
 import './GoToTop.css'
 
 const GoToTop = () => {
 
     const handleTop = () => {
-        window.scrollTo(0,0)
+        animateScroll.scrollToTop(0);
     }
 
     return (

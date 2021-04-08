@@ -1,8 +1,16 @@
 
 .gototop__icon {
-    position: absolute;
+    position: fixed;
     right: 3.5%;
     bottom: 5%;
     font-size: 3.5rem;
     color: #3C96AE;
+    transition: .2s ease;
+    cursor: pointer;
+}
+.gototop__icon:hover, .gototop__icon:focus {
+    color: #3A4855
+}
+@media only screen and (max-width: 1600px) {
+    .gototop__icon{right: 7.5%;}
 }

@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+    background-color: #3A4855;
+    color: white;
+    padding: 4em 0;
+}
+.footer-container {
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+}
+.col h2 {
+    font-size: 1.3125rem;
+    font-weight: 600;
+    margin: 1.3125rem;
+}
+.col ul {
+    margin: 1.5rem 0 1.3125rem;
+}
+.col ul li{margin-bottom: .4rem;}
+.col ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .row {
+        display: flex;
+    }
+    .down {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

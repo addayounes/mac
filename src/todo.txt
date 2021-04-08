@@ -12,15 +12,16 @@
   ( x )  - join us section
   ( x )  - Siruis section
   ( x )  - social media links
-  (   )  - footer
+  ( ~ )  - footer
+  ( ~ )  - scroll to top
   (   )  - fichier section
-  ( ~ )  - go to top
   (   )  - animations ?
 
 
   ///// debugging /////
 
   (   )  - fix drop-down menus
+  (   )  - fix scroll to top button
   (   )  - rewrite navbar's css
   ( x )  - rewrite landing page's css
   (   )  - button stretch on a specific view port

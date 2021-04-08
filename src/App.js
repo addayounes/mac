@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import ContentDetails from "./Pages/Content Details/ContentDetails";
 import LandingPage from "./Pages/Landing Page/LandingPage";
@@ -14,38 +14,43 @@ import JoinUs from './Pages/Join Us/JoinUs'
 import Sirius from "./Pages/Sirius/Sirius";
 import GoToTop from "./Components/Go To Top/GoToTop";
 import { useState } from "react";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
 
-  const [top, settop] = useState(false)
+  //  const [top, settop] = useState(false)
 
-  const goTo = () => {
-    window.scrollY > 100 ? settop(true) : settop(false)
-  }
+  //  const goTo = () => {
+  //    window.scrollY > 300 ? settop(true) : settop(false)
+  //  }
 
-  window.addEventListener('scroll', goTo)
+  //  window.addEventListener('scroll', goTo)
 
   return (
       <BrowserRouter>
         <div>
           <Navbar />
-          {top && <GoToTop />}
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
-          <Route path="/Activities" component={() => <Activities />} />
-          <Route path="/Sirius" component={() => <Sirius />} />
-          <Route path="/Rejoindre" component={() => <JoinUs />} />
-          <Route path="/contact" component={() => <Contact />} />
-          <Route path="/about" component={() => <AboutUs />} />
-          <Route path="/Events" component={() => <Events />} />
-          <Route path="/Charity" component={() => <ContentDetails ContentDetails={CharityDetails} />} />
-          <Route path="/MACday" component={() => <ContentDetails ContentDetails={MacDayDetails} />} />
-          <Route path="/LangageSpot" component={() => <ContentDetails ContentDetails={LanguageSpotDetails} />} />
-          <Route path="/Workshop" component={() => <ContentDetails ContentDetails={WorkshopDetails} />} />
-          <Route path="/WebDesign" component={() => <ContentDetails ContentDetails={WebDesignDetails} />} />
-          <Route path="/3DPrinter" component={() => <ContentDetails ContentDetails={PrinterDetails} />} />
-          <Route path="/Trainings" component={() => <ContentDetails ContentDetails={TrainingsDetails} />} />
+          <GoToTop />
+          {/* {top && <GoToTop />} */}
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
+            <Route path="/Activities" component={() => <Activities />} />
+            <Route path="/Sirius" component={() => <Sirius />} />
+            <Route path="/Rejoindre" component={() => <JoinUs />} />
+            <Route path="/contact" component={() => <Contact />} />
+            <Route path="/about" component={() => <AboutUs />} />
+            <Route path="/Events" component={() => <Events />} />
+            <Route path="/Charity" component={() => <ContentDetails ContentDetails={CharityDetails} />} />
+            <Route path="/MACday" component={() => <ContentDetails ContentDetails={MacDayDetails} />} />
+            <Route path="/LangageSpot" component={() => <ContentDetails ContentDetails={LanguageSpotDetails} />} />
+            <Route path="/Workshop" component={() => <ContentDetails ContentDetails={WorkshopDetails} />} />
+            <Route path="/WebDesign" component={() => <ContentDetails ContentDetails={WebDesignDetails} />} />
+            <Route path="/3DPrinter" component={() => <ContentDetails ContentDetails={PrinterDetails} />} />
+            <Route path="/Trainings" component={() => <ContentDetails ContentDetails={TrainingsDetails} />} />
+          </Switch>
+          <Footer /> 
         </div>
       </BrowserRouter>
     
