@@ -27,7 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact__btn">
-                            <Button text="Envoyer le message" color="white" bgColor="#3C96AE" border={false} hover={true} size="1rem" />
+                            <Button destination="/" text="Envoyer le message" color="white" bgColor="#3C96AE" border={false} hover={true} size="1rem" />
                     </div>
                 </div>
 

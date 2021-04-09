@@ -32,12 +32,12 @@ const Navbar = () => {
                         <li><NavLink to="/Fichiers">Fichiers</NavLink></li>
                         <li>
                             <NavLink to="/Events">Evenements
-                            <ul className='nested-ul'>
-                                <li><NavLink to="/10Talk">10Talk</NavLink></li>
-                                <li><NavLink to="/Charity">Charity</NavLink></li>
-                                <li><NavLink to="/MACday">MAC day</NavLink></li>
-                                <li><NavLink to="/MACGCS">MAC's GCS</NavLink></li>
-                            </ul>
+                                <ul className='nested-ul'>
+                                    <li><NavLink to="/10Talk">10Talk</NavLink></li>
+                                    <li><NavLink to="/Charity">Charity</NavLink></li>
+                                    <li><NavLink to="/MACday">MAC day</NavLink></li>
+                                    <li><NavLink to="/MACGCS">MAC's GCS</NavLink></li>
+                                </ul>
                             </NavLink>
                         </li>
                         <li>
@@ -52,8 +52,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li><NavLink to="/Sirius">Siruis</NavLink></li>
-                        <li><NavLink to="/about">A Propos</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><NavLink to="/About">A Propos</NavLink></li>
+                        <li><NavLink to="/Contact">Contact</NavLink></li>
                     </ul>
                 </nav>
                 {toggleNavBar ? <img onClick={handleMenuClick} className="exit" src={exit} alt='exit' />
