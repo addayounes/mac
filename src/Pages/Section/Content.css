@@ -13,6 +13,7 @@
 .split {
     width: 85%;
     margin: 0 auto;
+    max-width: 1500px;
 }
 .section__right{
     text-align: center;

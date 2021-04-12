@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+import GoToTop from '../Go To Top/GoToTop'
 import './Footer.css'
 
 const Footer = () => {
@@ -98,6 +99,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+                {/* <GoToTop className="gototop" /> */}
             </div>
         </footer>
     )

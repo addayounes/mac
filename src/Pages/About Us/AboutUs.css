@@ -30,3 +30,7 @@
     line-height: 1.6;
     font-weight: 500;
 }
+.container-about {
+    max-width: 1572px;
+    margin: 0 auto;
+}

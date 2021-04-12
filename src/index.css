@@ -11,3 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
 }
+.container {
+  max-width: 1572px;
+  margin: 0 auto;
+}
