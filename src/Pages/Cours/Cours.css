@@ -1,0 +1,109 @@
+:root {
+    --accent-clr: #3C96AE;
+    --dark-clr: #3A4855;
+    --grey-clr: #f8f8f8
+}
+.cours-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1em;
+    background-color: var(--grey-clr);
+    color: var(--dark-clr);
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.semestre {
+    grid-column: 2 / 5
+}
+.modules {
+    grid-column: 5 / 8;
+}
+.content-feed {
+    grid-column: 8 / -1
+}
+/**************** year *******************/
+.year {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.active-year {
+    background-color: var(--accent-clr);
+    color: white;
+}
+.year-block {
+    width: 100%;
+    height: 50%;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year-block:not(.active-year):hover {
+    box-shadow: 0 0 0 1px var(--accent-clr);
+    /* background-color: white; */
+}
+/**************** semestre *******************/
+.grid-col ul{margin: 0; padding: 0;}
+.grid-col ul li {
+    padding: 1.8em 2em;
+    text-align: center;
+    background-color: white;
+    list-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .1s ease-out;
+}
+.grid-col ul li:not(.active-li):hover {
+    box-shadow: 0 0 0 1px var(--accent-clr);
+    transition: .1s ease-out;
+}
+.grid-col ul li + li {
+    margin-top: .5em
+}
+.grid-col ul li a {
+    text-decoration: none;
+    color: var(--dark-clr);
+}
+.active-li, .active{
+    background-color: var(--accent-clr) !important;
+    color: white !important;
+}
+.grid-col div.section-title {
+    padding: 1.5em 2em;
+    text-align: center;
+    background-color: var(--grey-clr);
+    border-top: white solid 5px;
+    border-right: white solid 5px;
+    border-left: white solid 5px;
+    border-radius: 8px 8px 0 0;
+    font-weight: 500;
+    margin: 1em 0 0;
+}
+
+/**************** content-feed *******************/
+
+.content-feed {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1em;
+
+}
+.cours-content{
+    grid-column: 1 / 4;
+}
+.td-content{
+    grid-column: 4 / 7;
+}
+.examen-content{
+    grid-column: 7 / -1;
+    margin-right: 1em;
+}

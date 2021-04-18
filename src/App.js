@@ -12,8 +12,8 @@ import Events from "./Pages/Events/Events";
 import Contact from "./Pages/Contact/Contact";
 import JoinUs from './Pages/Join Us/JoinUs'
 import Sirius from "./Pages/Sirius/Sirius";
+import Cours from './Pages/Cours/Cours'
 import GoToTop from "./Components/Go To Top/GoToTop";
-import { useState } from "react";
 import Footer from "./Components/Footer/Footer";
 
 
@@ -37,6 +37,7 @@ function App() {
             <Route exact path="/" component={LandingPage} />
             <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
             <Route path="/Activities" component={() => <Activities />} />
+            <Route path="/Cours" component={() => <Cours />} />
             <Route path="/Sirius" component={() => <Sirius />} />
             <Route path="/Rejoindre" component={() => <JoinUs />} />
             <Route path="/contact" component={() => <Contact />} />
@@ -50,7 +51,7 @@ function App() {
             <Route path="/3DPrinter" component={() => <ContentDetails ContentDetails={PrinterDetails} />} />
             <Route path="/Trainings" component={() => <ContentDetails ContentDetails={TrainingsDetails} />} />
           </Switch>
-          <Footer /> 
+          {/* <Footer />  */}
         </div>
       </BrowserRouter>
     

@@ -29,7 +29,7 @@ const Navbar = () => {
                 <nav id={toggleNavBar ? 'hidden' : ''}>
                     <ul onClick={handleMenuClick}>
                         <li><NavLink exact to="/">Accueil</NavLink></li>
-                        <li><NavLink to="/Fichiers">Fichiers</NavLink></li>
+                        <li><NavLink to="/Cours">Cours</NavLink></li>
                         <li>
                             <NavLink to="/Events">Evenements
                             <ul className='nested-ul'>
