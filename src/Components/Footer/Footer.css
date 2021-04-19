@@ -1,8 +1,6 @@
 footer {
     width: 100%;
     background-color: #3A4855;
-<<<<<<< HEAD
-<<<<<<< HEAD
     color: white;
 }
 .footer-container {
@@ -18,7 +16,6 @@ footer {
     width: 76% !important;
     margin: 0 auto;
     display: flex;
-=======
     color: white
 }
 .footer-container {
@@ -32,8 +29,6 @@ footer {
     width: 76% !important;
     margin: 0 auto;
     display: flex;
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
-=======
     color: white
 }
 .footer-container {
@@ -47,7 +42,6 @@ footer {
     width: 76% !important;
     margin: 0 auto;
     display: flex;
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
     align-items: center;
     justify-content: space-between
 }
@@ -90,15 +84,7 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     footer{padding: 4em 0;font-size: 0.875rem;}
-=======
-    footer{padding: 4em 0}
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
-=======
-    footer{padding: 4em 0}
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
     .row {display: flex}
     .footer__icon{display: none}
     .col ul li a, .col ul li span{padding: 0}
@@ -116,8 +102,6 @@ footer {
     .col ul {
         display: block !important;
         list-style: disc
-<<<<<<< HEAD
-<<<<<<< HEAD
     }
     .block-container {
         width: 100% !important;
@@ -131,10 +115,7 @@ footer {
         transition: none;
         cursor: default
     }
-=======
-=======
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
-    }
+    
     .block-container {
         width: 100% !important;
         margin: 0 0 2em;
@@ -147,10 +128,6 @@ footer {
         transition: none;
         cursor: default
     }
-<<<<<<< HEAD
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
-=======
->>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
     .footer-item-block:hover,
     .footer-item-block:focus,
     .col ul li:hover,
