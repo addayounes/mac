@@ -4,7 +4,7 @@ import "./ContentDetails.css"
 
 const ContentDetails = ({ SliderData, ContentDetails }) => {
 
-    useEffect(() => {window.scrollTo(0,0)}, [])
+    useEffect(() => {window.scrollTo(0,0)})
 
     return (
         <div className="ContentDetails">

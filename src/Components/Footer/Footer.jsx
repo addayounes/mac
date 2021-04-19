@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+<<<<<<< HEAD
 import GoToTop from '../Go To Top/GoToTop'
+=======
+>>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
 import './Footer.css'
 
 const Footer = () => {

@@ -11,7 +11,7 @@ const JoinUs = () => {
         <section className="joinUs">
             
             <h1>Rejoindre Le Club MAC</h1>
-            <form action="" className="form-split">
+            <form className="form-split">
                 <div className="joinUs__left">
                     <Input width="100%" label="Nom" placeolder="Mohamed" />
                     <Input width="100%" label="Prénom" placeolder="Amine" />
@@ -39,7 +39,7 @@ const JoinUs = () => {
                         <option>Francais</option>
                         <option>Anglais</option>
                     </select>
-                    <Button width="100%" className="btn-joinUs" text="Rejoindre" color="white" bgColor="#3C96AE" border={false} hover={true} size="1rem" />
+                    <Button width="100%" className="btn-joinUs" text="Rejoindre" color="white" bgColor="#3C96AE" border={false} hover={true} size="1rem" destination="/" />
                 </div>
 
             </form>

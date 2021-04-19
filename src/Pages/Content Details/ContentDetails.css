@@ -14,8 +14,13 @@
     font-weight: 500;
 }
 .ContentDetails {
+<<<<<<< HEAD
     margin: 2em auto;
     max-width: 1500px;
+=======
+    margin: 2em 0;
+    min-height: calc(100vh - 128px);
+>>>>>>> 2397d6cde2c48395cc0b89636caa16fd0a2b150f
 }
 
 @media only screen and (min-width: 1200px) {
