@@ -12,6 +12,7 @@
     color: var(--dark-clr);
     max-width: 2000px;
     margin: 0 auto;
+    padding-bottom: 2em;
 }
 .semestre {
     grid-column: 2 / 5
@@ -73,7 +74,7 @@
     text-decoration: none;
     color: var(--dark-clr);
 }
-.active-li, .active{
+.active-li{
     background-color: var(--accent-clr) !important;
     color: white !important;
 }

@@ -58,7 +58,7 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-    footer{padding: 4em 0}
+    footer{padding: 4em 0;font-size: 0.875rem;}
     .row {display: flex}
     .footer__icon{display: none}
     .col ul li a, .col ul li span{padding: 0}

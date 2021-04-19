@@ -20,6 +20,7 @@ const Cours = () => {
         setToggleSemestreClass(value => !value)
         setSemestre(Semestre===0 ? 1 : 0)
     }
+    
 
     let year = ToggleYearClass ? moduleA1 : moduleA2
     let Semestres = year[Semestre]

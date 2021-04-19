@@ -14,15 +14,16 @@
   ( x )  - social media links
   ( x )  - footer
   ( ~ )  - scroll to top
-  (   )  - fichier section
+  ( ~ )  - Cours section
+  ( ~ )  - GCS MAC section
   (   )  - animations ?
 
 
   ///// debugging /////
 
   (   )  - fix drop-down menus
-  (   )  - fix scroll to top button
+  ( x )  - fix scroll to top button
   (   )  - rewrite navbar's css
   ( x )  - rewrite landing page's css
-  (   )  - button stretch on a specific view port
   (   )  - improve footer logic
+  (   )  - add active class on "module" onClick
