@@ -32,23 +32,23 @@ const Navbar = () => {
                         <li><NavLink to="/Cours">Cours</NavLink></li>
                         <li>
                             <NavLink to="/Events">Evenements
-                                <ul className='nested-ul'>
+                                {/* <ul className='nested-ul'>
                                     <li><NavLink to="/10Talk">10Talk</NavLink></li>
                                     <li><NavLink to="/Charity">Charity</NavLink></li>
                                     <li><NavLink to="/MACday">MAC day</NavLink></li>
                                     <li><NavLink to="/MACGCS">MAC's GCS</NavLink></li>
-                                </ul>
+                                </ul> */}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/Activities">Activités
-                                <ul className="nested-ul">
+                                {/* <ul className="nested-ul">
                                     <li><NavLink to="/LangageSpot">Langage Spot</NavLink></li>
                                     <li><NavLink to="/Workshop">Workshop</NavLink></li>
                                     <li><NavLink to="/WebDesign">Web Design</NavLink></li>
                                     <li><NavLink to="/3DPrinter">3D Printer</NavLink></li>
                                     <li><NavLink to="/Trainings">Trainings</NavLink></li>
-                                </ul>
+                                </ul> */}
                             </NavLink>
                         </li>
                         <li><NavLink to="/Sirius">Siruis</NavLink></li>

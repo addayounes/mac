@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { moduleA1 } from './FirstYear-Data'
 import { moduleA2 } from './SecondYear-Data'
@@ -25,6 +25,10 @@ const Cours = () => {
     let year = ToggleYearClass ? moduleA1 : moduleA2
     let Semestres = year[Semestre]
     let obj = Semestres[Item]
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      })
 
     return (
         <section className="cours-section">

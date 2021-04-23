@@ -20,7 +20,8 @@ footer {
 }
 .footer-container {
     margin: 0 auto;
-    display: flex
+    display: flex;
+    flex-direction: column;
 }
 .row{
     width: 100%
@@ -82,9 +83,33 @@ footer {
     text-decoration: none;
     color: white
 }
-
+.credits{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin: 1em auto 1.5em;
+}
+.credits p {
+    color: white;
+    font-size: 1rem;
+    margin:  0 .8em 0;
+    display: inline-block;
+    opacity: .5;
+}
+.credits .icon {
+    font-size: 1.3125rem;
+    color: white;
+    cursor: pointer;
+    opacity: .5;
+}
+.credits .icon:hover {
+    opacity: 1;
+}
+.insta {
+    margin-left: .5em;
+}
 @media only screen and (min-width: 900px) {
-    footer{padding: 4em 0;font-size: 0.875rem;}
+    footer{padding: 4em 0 1em ;font-size: 0.875rem;}
     .row {display: flex}
     .footer__icon{display: none}
     .col ul li a, .col ul li span{padding: 0}
@@ -135,5 +160,6 @@ footer {
         background-color: transparent;
         transition: none
     }
+    .credits{margin-top: 2em;}
 
 }

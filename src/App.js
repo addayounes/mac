@@ -19,32 +19,21 @@ import Error from "./Pages/Error/Error";
 
 
 function App() {
-
-  //  const [top, settop] = useState(false)
-
-  //  const goTo = () => {
-  //    window.scrollY > 300 ? settop(true) : settop(false)
-  //  }
-
-  //  window.addEventListener('scroll', goTo)
-
   return (
       <BrowserRouter>
         <div>
           <Navbar />
           <GoToTop />
-          {/* {top && <GoToTop />} */}
           <Switch>
             <Route exact path="/" component={LandingPage} />
+            <Route path="/Activities" component={Activities} />
+            <Route path="/Cours" component={Cours} />
+            <Route path="/Sirius" component={Sirius} />
+            <Route path="/Rejoindre" component={JoinUs} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/about" component={AboutUs} />
+            <Route path="/Events" component={Events} />
             <Route path="/10talk" component={() => <ContentDetails SliderData={TenTalkSlide} ContentDetails={TenTalkDetails} />} />
-            <Route path="/Activities" component={() => <Activities />} />
-            <Route path="/Cours" component={() => <Cours />} />
-            <Route path="/Error" component={() => <Error />} />
-            <Route path="/Sirius" component={() => <Sirius />} />
-            <Route path="/Rejoindre" component={() => <JoinUs />} />
-            <Route path="/contact" component={() => <Contact />} />
-            <Route path="/about" component={() => <AboutUs />} />
-            <Route path="/Events" component={() => <Events />} />
             <Route path="/Charity" component={() => <ContentDetails ContentDetails={CharityDetails} />} />
             <Route path="/MACday" component={() => <ContentDetails ContentDetails={MacDayDetails} />} />
             <Route path="/LangageSpot" component={() => <ContentDetails ContentDetails={LanguageSpotDetails} />} />

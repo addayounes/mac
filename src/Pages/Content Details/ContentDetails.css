@@ -30,4 +30,8 @@
     .content__heading {
         text-align: center;
     }
+    .ContentDetails {
+        margin: 2em auto;
+        padding: 2em 0;
+    }
 }

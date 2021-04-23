@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 .gototop__icon:hover, .gototop__icon:focus {
-    color: #3A4855
+    color: hsl(193, 49%, 56%);
 }
 @media only screen and (max-width: 1600px) {
     .gototop__icon{right: 7.5%;}

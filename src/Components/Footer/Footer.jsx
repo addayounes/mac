@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
-import GoToTop from '../Go To Top/GoToTop'
+import { FaAngleDown, FaAngleUp, FaGithub, FaInstagram } from 'react-icons/fa'
 import './Footer.css'
 
 const Footer = () => {
@@ -99,7 +98,11 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                {/* <GoToTop className="gototop" /> */}
+                <div className="credits">
+                    <p>All Rights Reserved Adda Younes</p>
+                    <Link to={{pathname: 'https://github.com/addayounes/'}}  target="_blank"><FaGithub className="github icon" /></Link>
+                    <Link to={{pathname: 'https://www.instagram.com/younes_adda/'}}  target="_blank"><FaInstagram className="insta icon" /></Link>
+                </div>
             </div>
         </footer>
     )

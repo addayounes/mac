@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Button from '../../Components/button/Button'
 import Input from "../../Components/InputField/Input"
 import { Link } from 'react-router-dom'
@@ -6,8 +6,6 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutube } from 'react-icons/fa'
 import "./Contact.css"
 
 const Contact = () => {
-
-    const [viewPortWidth, setViewPortWidth] = useState("100%")
 
     useEffect(() => {window.scrollTo(0,0)})
 
@@ -18,12 +16,12 @@ const Contact = () => {
                     <h1>Envoyer nous un message !</h1>
                     <div className="contact__inputs-wrapper">
                         <div className="contact__nom-prenom">
-                            <Input label="Nom" placeolder="Mohamed" message={false} width={viewPortWidth} />
-                            <Input label="Prénom" placeolder="Amine" message={false} width={viewPortWidth} />
+                            <Input label="Nom" placeolder="Mohamed" message={false} width={'100%'} />
+                            <Input label="Prénom" placeolder="Amine" message={false} width={'100%'} />
                         </div>
                         <div className="contact__email-message">
-                            <Input label="Email" placeolder="exemple@mail.com" message={false} width={viewPortWidth} />
-                            <Input label="Message" placeolder="Votre Message..." message={true} width={viewPortWidth} rows={8} />
+                            <Input label="Email" placeolder="exemple@mail.com" message={false} width={'100%'} />
+                            <Input label="Message" placeolder="Votre Message..." message={true} width={'100%'} rows={8} />
                         </div>
                     </div>
                     <div className="contact__btn">

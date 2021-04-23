@@ -108,3 +108,41 @@
     grid-column: 7 / -1;
     margin-right: 1em;
 }
+
+
+@media only screen and (max-width: 950px) {
+    .content-feed {
+        display: block
+    }
+    .year {
+        grid-column: 1 / 3;
+    }
+    .semestre {
+        grid-column: 3 / 7
+    }
+    .modules {
+        grid-column: 7 / 11;
+    }
+    .content-feed {
+        grid-column: 11 / -1;
+        margin-right: 1em;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .cours-section {
+        display: block;
+    }
+
+    .grid-col:not(.year) {
+        padding: 0 2em;
+    }
+    .year {
+        flex-direction: row;
+    }
+    .year-block {
+        height: 6rem;
+        text-orientation: unset;
+        writing-mode: unset;
+        border-radius: 0;
+    }
+}
