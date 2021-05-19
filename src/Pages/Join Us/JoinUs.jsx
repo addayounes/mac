@@ -1,27 +1,39 @@
 import React, { useEffect } from 'react'
 import Input from '../../Components/InputField/Input'
-import Button from '../../Components/button/Button'
+import emailjs from 'emailjs-com'
 import "./JoinUs.css"
 
 const JoinUs = () => {
 
     useEffect(() => {window.scrollTo(0,0)})
 
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_fef4mhi', 'template_68t3kc7', e.target, 'user_5AltFuMYHwgJ8c9AklSrS')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      }
+
     return (
         <section className="joinUs">
             
             <h1>Rejoindre Le Club MAC</h1>
-            <form className="form-split">
+            <form className="form-split" onSubmit={sendEmail}>
                 <div className="joinUs__left">
-                    <Input width="100%" label="Nom" placeolder="Mohamed" />
-                    <Input width="100%" label="Prénom" placeolder="Amine" />
-                    <Input width="100%" label="Email" placeolder="exemple@gmail.com" />
-                    <Input width="100%" label="Téléphone" placeolder="+213 599 88 77 66" />
-                    <Input width="100%" label="Le club précédent" placeolder="C'est Facultatif, Mettez 'Aucun' si vous n'avez jamais été dans un club ou une association" message={true} />
+                    <Input name="Nom" width="100%" label="Nom" placeolder="Mohamed" />
+                    <Input name="Prenom" width="100%" label="Prénom" placeolder="Amine" />
+                    <Input name="Email" width="100%" label="Email" placeolder="exemple@gmail.com" />
+                    <Input name="Telephone" width="100%" label="Téléphone" placeolder="+213 599 88 77 66" />
+                    <Input name="lastclub" width="100%" label="Le club précédent" placeolder="C'est Facultatif, Mettez 'Aucun' si vous n'avez jamais été dans un club ou une association" message={true} />
                 </div>
 
                 <div className="joinUs__right">
-                    <Input width="100%" label="Motivation" placeolder="Que-ce qui vous motive à rejoindre le groupe ?" message={true} rows="6" />
+                    <Input name="Motivation" width="100%" label="Motivation" placeolder="Que-ce qui vous motive à rejoindre le groupe ?" message={true} rows="6" />
                     
                     <label className="input__label">Departement</label>
                     <select name="departement" id="departement">
@@ -39,7 +51,7 @@ const JoinUs = () => {
                         <option>Francais</option>
                         <option>Anglais</option>
                     </select>
-                    <Button width="100%" className="btn-joinUs" text="Rejoindre" color="white" bgColor="#3C96AE" border={false} hover={true} size="1rem" destination="/" />
+                    <Input onSubmit={sendEmail} className="submit" value="Envoyer un message" type="submit" message={false} width={'100%'} />
                 </div>
 
             </form>

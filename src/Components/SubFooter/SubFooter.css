@@ -1,0 +1,29 @@
+.subfooter {
+    background: hsl(209, 19%, 35%);
+}
+.subfooter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subfooter p {
+    margin: 0;
+    padding: .9em 0;
+    font-size: .875rem;
+}
+.github, .subfooter p, .instagram {
+    color: #fff;
+    opacity: .7
+}
+.github, .instagram {
+    margin-left: .5em;
+    font-size: 1.125rem;
+    cursor: pointer
+}/*instagram*/
+.github:hover,
+.github:focus,
+.instagram:hover,
+.instagram:focus {opacity: 1}
+@media only screen and (max-width: 850px) {
+    .subfooter {display: none}
+}

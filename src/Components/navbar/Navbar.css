@@ -13,7 +13,7 @@
 }
 
 header {
-    width: 100%;
+    width: 100% !important;
     height: 80px;
     background-color: white;
     display: flex;
@@ -70,7 +70,7 @@ header nav > ul li a:hover {
 }
 
 
-@media only screen and (max-width: 1470px) {
+@media only screen and (max-width: 1200px) {
     nav  {
         display: none;
     }

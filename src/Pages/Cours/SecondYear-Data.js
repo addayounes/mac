@@ -2,18 +2,44 @@ export const S1 = [
     {
         module: "Analyse 3",
         cours: [
-            {nomCours: "Cours_N01",
-            link:"/a"},
-            {nomCours: "Cours_N02",
-            link:"/a"}
+            {nomCours: "Les Série Numériques",
+            link:"https://drive.google.com/file/d/1sKJE7nT6YGSEcEtg_WiXh1pSSW3L0nkV/view?usp=sharing"},
+            {nomCours: "intégrales-multiples",
+            link:"/https://drive.google.com/file/d/17MJrfI_ZEkEz3AiOx7rTq-xWrMWcTwf2/view?usp=sharing"},
+            {nomCours: "Intégrales_multiples_zoubir",
+            link:"https://drive.google.com/file/d/17MJrfI_ZEkEz3AiOx7rTq-xWrMWcTwf2/view?usp=sharing"},
+            {nomCours: "Analyse3",
+            link:"https://drive.google.com/file/d/1Bgin6ZNJF25PGMuDbHa4lI1ewyoKUqmH/view?usp=sharing"},
+            {nomCours: "Analyse Vectorielle",
+            link:"https://drive.google.com/file/d/1p2y0C20ZdBRcEEJscVwGwItewrEQJ_i2/view?usp=sharing"}
         ],
         TD: [
-            {nomTD: "TD_N01",
-            link:"/a"}
+            {nomTD: "TD1 CPST 2020-2021",
+            link:"https://drive.google.com/file/d/1VjbnxNQ7dm1JdA1JK9_VeBHNzaEAZqy6/view?usp=sharing"},
+            {nomTD: "TD2 CPST 2020-2021",
+            link:"https://drive.google.com/file/d/1VjbnxNQ7dm1JdA1JK9_VeBHNzaEAZqy6/view?usp=sharing"},
+            {nomTD: "TD4",
+            link:"https://drive.google.com/file/d/16YxIeo-ZsEfRJpmnDlMeJ46famhBcdUI/view?usp=sharing"},
+            {nomTD: "Analyse Vectorielle TD",
+            link:"https://drive.google.com/file/d/1KJtmg0YCCYjQyBUtrYI77r8MYHW1s-SD/view?usp=sharing"},
+            {nomTD: "CORRECTION",
+            link:"https://drive.google.com/file/d/1rUygkIL_Q2ZqNtTs1ydpyTRgswhkhydP/view?usp=sharing"},
+            {nomTD: "Corrigé TD3 Suite Numérique",
+            link:"https://drive.google.com/file/d/1rUygkIL_Q2ZqNtTs1ydpyTRgswhkhydP/view?usp=sharing"},
+            {nomTD: "Intégrales Multiples TD",
+            link:"https://drive.google.com/file/d/1KE6LcrNsxYHbhybznuwFdtMQg0H6Di5S/view?usp=sharing"},
+            {nomTD: "TD 3",
+            link:"https://drive.google.com/file/d/1nTFgBJospIDreUyonIyG5d37U9FH8vY-/view?usp=sharing"},
+            {nomTD: "TD1 Les Intégrales Multiples",
+            link:"https://drive.google.com/file/d/1VjbnxNQ7dm1JdA1JK9_VeBHNzaEAZqy6/view?usp=sharing"},
+            {nomTD: "Exercices de Révision (Analyse3)",
+            link:"https://drive.google.com/file/d/1ghCOav7rJxuAOjtOciYFv8Z2q5HTROYK/view?usp=sharing"},
+            {nomTD: "solution des Exercices de Révision (Analyse3)",
+            link:"https://drive.google.com/file/d/1hAUa6vM-_jY44kn__e4OkIyxqo4Hz4oN/view?usp=sharing"},
         ],
         Examen: [
-            {nomExamen: "Examem 2017",
-            link:"/a"}
+            {nomExamen: "",
+            link:"/Cours"}
         ]
     },
     {

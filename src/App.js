@@ -15,13 +15,13 @@ import Sirius from "./Pages/Sirius/Sirius";
 import Cours from './Pages/Cours/Cours'
 import GoToTop from "./Components/Go To Top/GoToTop";
 import Footer from "./Components/Footer/Footer";
-import Error from "./Pages/Error/Error";
+import SubFooter from "./Components/SubFooter/SubFooter";
 
 
 function App() {
   return (
       <BrowserRouter>
-        <div>
+        <>
           <Navbar />
           <GoToTop />
           <Switch>
@@ -43,7 +43,8 @@ function App() {
             <Route path="/Trainings" component={() => <ContentDetails ContentDetails={TrainingsDetails} />} />
           </Switch>
           <Footer /> 
-        </div>
+          <SubFooter /> 
+        </>
       </BrowserRouter>
     
   );

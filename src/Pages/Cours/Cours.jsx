@@ -21,8 +21,7 @@ const Cours = () => {
         setSemestre(Semestre===0 ? 1 : 0)
     }
     
-
-    let year = ToggleYearClass ? moduleA1 : moduleA2
+    let year = ToggleYearClass ? moduleA2 : moduleA1
     let Semestres = year[Semestre]
     let obj = Semestres[Item]
 
@@ -33,8 +32,8 @@ const Cours = () => {
     return (
         <section className="cours-section">
             <div className="grid-col year">
-                <span onClick={handleYearClick} className={`year-block first-year ${ToggleYearClass ? 'active-year' : ''}`}>1ere Année</span>
-                <span onClick={handleYearClick} className={`year-block second-year ${ToggleYearClass ? '' : 'active-year'}`}>2eme Année</span>
+                <span onClick={handleYearClick} className={`year-block first-year ${ToggleYearClass ? '' : 'active-year'}`}>1ere Année</span>
+                <span onClick={handleYearClick} className={`year-block second-year ${ToggleYearClass ? 'active-year' : ''}`}>2eme Année</span>
             </div>
             <div className="grid-col semestre">
                 <div className="section-title">Semestre</div>
@@ -62,7 +61,7 @@ const Cours = () => {
                     <ul>
                         {obj.cours.map((cour, index) => {
                             return (
-                                <li key={index}><Link to={cour.link}>{cour.nomCours}</Link></li>
+                                <li key={index}><Link to={{pathname : cour.link}} target="_blank">{cour.nomCours}</Link></li>
                             )
                         })} 
                     </ul>
@@ -72,7 +71,7 @@ const Cours = () => {
                     <ul>
                         {obj.TD.map((td, index) => {
                             return (
-                                <li key={index}><Link to={td.link}>{td.nomTD}</Link></li>
+                                <li key={index}><Link to={{pathname : td.link}} target="_blank">{td.nomTD}</Link></li>
                             )
                         })}
                     </ul>
@@ -82,7 +81,7 @@ const Cours = () => {
                     <ul>
                         {obj.Examen.map((examen, index) => {
                             return (
-                                <li key={index}><Link to={examen.link}>{examen.nomExamen}</Link></li>
+                                <li key={index}><Link to={{pathname : examen.link}} target="_blank">{examen.nomExamen}</Link></li>
                             )
                         })}
                     </ul>
