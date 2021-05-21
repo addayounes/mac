@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Input from '../../Components/InputField/Input'
 import emailjs from 'emailjs-com'
 import "./JoinUs.css"
@@ -6,6 +6,7 @@ import "./JoinUs.css"
 const JoinUs = () => {
 
     useEffect(() => {window.scrollTo(0,0)})
+    const [done, setDone] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -17,6 +18,7 @@ const JoinUs = () => {
               console.log(error.text);
           });
           e.target.reset();
+          setDone(true)
       }
 
     return (
@@ -52,6 +54,7 @@ const JoinUs = () => {
                         <option>Anglais</option>
                     </select>
                     <Input onSubmit={sendEmail} className="submit" value="Envoyer un message" type="submit" message={false} width={'100%'} />
+                    <span className="done-msg" style={{display: done ? 'block' : 'none'}}>Votre message a été envoyé merci de nous avoir contactés</span>
                 </div>
 
             </form>

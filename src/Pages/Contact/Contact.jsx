@@ -8,19 +8,37 @@ import "./Contact.css"
 const Contact = () => {
 
     const [error, setError] = useState(false)
+    const [done, setDone] = useState(false)
+    const [data, setData] = useState({
+        fname: '',
+        lname: '',
+        email: '',
+        message: ''
+    })
+
+    const handleChange = (e) => {
+        setData({
+            ...data,
+            [e.target.name]: e.target.value
+        })
+    }
 
     function sendEmail(e) {
         e.preventDefault();
+        
+        if(data.fname==='' || data.lname==='' || data.email==='' || data.message==='')
+        return setError(true)
     
         emailjs.sendForm('service_fef4mhi', 'template_qcjvtse', e.target, 'user_5AltFuMYHwgJ8c9AklSrS')
           .then((result) => {
-              console.log(result.text);
+            console.log(result);
           }, (error) => {
-              console.log(error.text);
+              setDone(false)
               setError(true)
           });
           e.target.reset();
-          console.log(e.target);
+          setError(false)
+          setDone(true)
       }
     return (
         <section className="contact-section">
@@ -30,13 +48,14 @@ const Contact = () => {
                         <h1>Envoyer nous un message !</h1>
                         <div className="contact__inputs-wrapper">
                             <div className="contact__nom-prenom">
-                                <Input name="fname" label="Nom" placeolder="Mohamed" message={false} width={'100%'} />
-                                <Input name="lname" label="Prénom" placeolder="Amine" message={false} width={'100%'} />
+                                <Input onChange={handleChange} value={data.fname} name="fname" label="Nom" placeolder="Mohamed" message={false} width={'100%'} />
+                                <Input onChange={handleChange} value={data.lname} name="lname" label="Prénom" placeolder="Amine" message={false} width={'100%'} />
                             </div>
                             <div className="contact__email-message">
-                                <Input name="email" label="Email" placeolder="exemple@mail.com" message={false} width={'100%'} />
-                                <Input label="Message" placeolder="Votre Message..." message={true} width={'100%'} rows={8} />
-                                <span className="error-msg" style={{display: error ? 'block' : 'none'}}>ecrire un message svp</span>
+                                <Input onChange={handleChange} value={data.email} name="email" label="Email" placeolder="exemple@mail.com" message={false} width={'100%'} />
+                                <Input onChange={handleChange} value={data.message} label="Message" placeolder="Votre Message..." message={true} width={'100%'} rows={8} />
+                                <span className="error-msg" style={{display: error ? 'block' : 'none'}}>Les champs de texte ne peuvent pas être vides</span>
+                                <span className="done-msg" style={{display: done ? 'block' : 'none'}}>Votre message a été envoyé merci de nous avoir contactés</span>
                             </div>
                         </div>
                         <div className="contact__btn">
@@ -48,10 +67,6 @@ const Contact = () => {
                 <div className="contact__right">
                     <div className="contact__right-wrapper">
                         <h1 className="contact__heading">Nous Contacter</h1>
-                        <div className="contact__infos">
-                            <span className="contact__infos-label">Telephone :</span>
-                            <span className="contact__infos-detail">(+213) 556 14 32 46</span>
-                        </div>
                         <div className="contact__infos">
                             <span className="contact__infos-label">Email :</span>
                             <span className="contact__infos-detail">mac-club.enpo@gmail.com</span>

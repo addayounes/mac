@@ -1,7 +1,8 @@
 .btn {
-    padding: 1em 3.5em ;
+    padding: .875em 2.5em ;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
+    font-size: .875rem !important;
 }
 

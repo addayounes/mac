@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em 1em;
+    padding: 0 1em 3em;
     position: relative;
     width: 100%;
     left: 50%;
@@ -17,7 +17,7 @@
     width: 350px;
     flex-basis: 500px;
     border-radius: 10px;
-    margin: 0 1em;
+    margin: 0
 }
 
 .right-arrow, .left-arrow {
@@ -52,11 +52,10 @@
 @media only screen and (min-width: 700px) {
     .image {
         width: 500px;
+        margin: 0 1rem
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .image {
-        width: 650px;
-    }
+    .image {width: 650px}
 }

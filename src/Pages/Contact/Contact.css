@@ -41,11 +41,12 @@
     background-color: #fff;
 }
 .contact__btn {width: 100%}
-.error-msg {
+.error-msg, .done-msg {
     font-size: .875rem;
     text-transform: capitalize;
-    color: red
 }
+.error-msg {color: red}
+.done-msg {color: green}
 .contact__email-message:last-child {
     margin-bottom: 2em;
 }

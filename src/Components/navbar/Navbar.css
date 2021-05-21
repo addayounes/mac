@@ -44,33 +44,21 @@ header nav > ul {
     margin: 0;
     justify-self: flex-end;
 }
-.nested-ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-}
 
 header nav > ul li a {
     text-decoration: none;
     color: var(--accent-clr);
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 500;
-    padding: 14px 2rem;
+    padding: 14px 1.5rem;
     border-radius: 5px;
     margin-left: .5em;
 }
-header nav > ul li a:hover {
-    /* box-shadow: 0 0 0 1px var(--accent-clr); */
-    background-color: hsl(193, 49%, 95%);
-
-}
-.active {
-    background-color: hsl(193, 49%, 95%);
-    /* color: white; */
-}
+header nav > ul li a:hover {background-color: hsl(193, 49%, 95%)}
+.active {background-color: hsl(193, 49%, 95%)}
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
     nav  {
         display: none;
     }
@@ -78,6 +66,7 @@ header nav > ul li a:hover {
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
+        width: 28px;
     }
     #hidden > ul {
         flex-direction: column;
@@ -87,23 +76,19 @@ header nav > ul li a:hover {
         top: 80px;
         display: flex;
         align-items: center;     
-        background-color: var(--accent-clr);
+        background-color: var(--accent-clr)
     }
 
     header #hidden > ul li a {
         padding: 20px 50px;
         color: white;
-        text-align: center;
+        text-align: center
     }
-    header #hidden > ul li {
-        margin: 22.5px 50px;
-     }
+    header #hidden > ul li {margin: 22.5px 50px}
     header #hidden > ul li a:hover,.active {
         background-color: transparent;
-        color: var(--dark-clr);
+        color: var(--dark-clr)
     }
-    .container {
-        width: 85%;
-    }
+    .container {width: 85%}
 
   }
