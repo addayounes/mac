@@ -76,6 +76,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <ul style={styling(Arrow.contact)}>
+                            <li><span>+(213) 555 42 86 76</span></li>
                             <li><span>mac.club.enpo@gmail.com</span></li>
                             <li><span>ENP d'Oran (Ex ENSET, Oran, Es Senia</span></li>
                         </ul>

@@ -68,6 +68,10 @@ const Contact = () => {
                     <div className="contact__right-wrapper">
                         <h1 className="contact__heading">Nous Contacter</h1>
                         <div className="contact__infos">
+                            <span className="contact__infos-label">Téléphone :</span>
+                            <span className="contact__infos-detail">+(213) 555 42 86 76</span>
+                        </div>
+                        <div className="contact__infos">
                             <span className="contact__infos-label">Email :</span>
                             <span className="contact__infos-detail">mac-club.enpo@gmail.com</span>
                         </div>

@@ -9,27 +9,16 @@
     text-align: center;
     margin-bottom: 2em;
 }
-#departement, #langue {
-    width: 100%;
-    padding: 1em;
-    font-size: 1rem;
-    border-radius: 5px;
-    color: #3A4855;
-}
-#departement:focus, #langue:focus {
-    outline: none;
-}
-#langue {
-    margin-bottom: 2.5em;
-}
 
 @media only screen and (min-width: 1270px) {
     .joinUs {width: 76%}
-    .joinUs__section{background-color: #F5FAFB}
-    .form-split {display: flex}
-    .btn-joinUs {float: right}
-    .joinUs__left, .joinUs__right {
+    .form-split {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto
+    }
+    .joinUs__left {
         flex-basis: 100%;
-        padding: 0 3.5em;
+        padding: 0 3.5em
     }
 }
